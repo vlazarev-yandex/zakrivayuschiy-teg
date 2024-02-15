@@ -1,0 +1,44 @@
+/* 
+✦ like-icon — для svg-иконки анимированного сердца +
+✦ card__like-button — для кнопки Like рядом с иконкой
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
+✦ button__text — для обозначения текстового элемента внутри кнопки + */
+
+.card__icon-button {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    background: none;
+    outline: none;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    align-self: end;
+}
+
+.card__like-button {
+    display: flex;
+    width: 130px;
+    padding: 9px 17px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid var(--Themes__mainColor, #000);
+}
+
+.card__icon-button:focus-visible .card__like-button {
+    box-shadow: 2px 2px 0px 0px var(--Themes__mainColor);
+}
+
+.like-icon {
+    fill: var(--Themes__mainColor);
+}
+
+.button__text {
+    color: var(--Themes__mainColor);
+    font: var(--header__font);
+    line-height: 90%;
+}

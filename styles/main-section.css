@@ -1,0 +1,36 @@
+.mainSection {
+    color: var(--Themes__mainColor);
+    font: var(--mainSection__font);
+    text-align: center;
+    margin: auto;
+
+    width: min(100%, 696px); /* надо сделать через clamp */
+    border: 2px solid var(--Themes__mainColor, #000);
+    background: var(--Themes__background-color, #FFF);
+
+    margin-block-end: 108px;
+    text-align: start;
+}
+
+.mainSection__title {
+    font-size: 18px;
+    padding: 10px 4px 10px 8px;
+    text-align: start;
+}
+
+.mainSection__image {
+    background-image: url(../images/image.png);
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-size: contain;
+}
+
+.mainSection__text-section {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+
+    padding: 27px; /* надо сделать по макету */
+    line-height: 21px;
+    font-weight: 465;
+}

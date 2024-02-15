@@ -1,0 +1,29 @@
+.footer__save-button {
+    border: 2px solid var(--Themes__mainColor, #000);
+    background: var(--Themes__background-color, #FFF);
+    color: var(--Themes__mainColor);
+    padding: 15px 20px;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+    justify-content: space-around;
+    align-items: center;
+
+    font: var(--header__font);
+    line-height: 90%;
+}
+
+@media (width <= 375px) {
+    .footer__save-button {
+        flex-direction: column;
+    }
+}
+
+.footer__floppy-disc-icon {
+    fill: var(--Themes__mainColor);
+}

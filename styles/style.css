@@ -17,4 +17,18 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  position: relative;
+
+  padding: 102px 0;
+  background-color: var(--Themes__background-color);
+}
+
+.page-background {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--Themes__background);
+  background-size: 4px;
+  z-index: -1;
 }
