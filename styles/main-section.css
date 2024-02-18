@@ -2,7 +2,6 @@
     color: var(--Themes__mainColor);
     font: var(--mainSection__font);
     text-align: center;
-    margin: auto;
 
     width: min(100%, 696px); /* надо сделать через clamp */
     border: 2px solid var(--Themes__mainColor, #000);
