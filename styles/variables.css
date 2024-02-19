@@ -15,4 +15,6 @@
     --header__font-size-subtitle: clamp(0.875rem, calc(0.6769rem + 0.8451vw), 1.4375rem);
 
     --mainSection__font: normal 700 normal 18px "Inter-Variable";
+
+    --heart-sparks: #FF0000;
 }

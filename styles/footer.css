@@ -15,5 +15,8 @@
 }
 
 .footer__floppy-disc-icon {
-    fill: var(--Themes__mainColor);
+    fill: currentColor; 
+    transition: fill 1s ease;
+
+    z-index: 1;
 }

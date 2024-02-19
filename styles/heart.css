@@ -1,0 +1,135 @@
+.card__icon-button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  line-height: 0;
+
+  border: 2px transparent solid;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px var(--Themes__mainColor) solid;
+  transition: border-color 1s ease;
+}
+
+.card__icon-button:hover .core{
+    fill: var(--Themes__mainColor);
+    transition: fill 0.3s ease-in-out;
+}
+
+.card__icon-button:hover .main-body{
+    fill: var(--Themes__mainColor);
+    transition: fill 0.3s ease-in-out;
+    transition-delay: 0.05s;
+}
+
+.card__icon-button:active .core{
+    fill: var(--heart-sparks);
+    transition: fill 0.3s ease-in-out;
+}
+
+.card__icon-button:active .main-body{
+    fill: var(--heart-sparks);
+    transition: fill 0.3s ease-in-out;
+    transition-delay: 0.05s;
+}
+
+.like-icon {
+  fill: var(--Themes__mainColor);
+}
+
+.core {
+  fill: transparent;
+  transition: fill 0.3s ease-in-out;
+  transition-delay: 0.03s;
+}
+
+.contour {
+  fill: var(--Themes__mainColor);
+  transition: fill 0.1s linear;
+}
+
+.main-body {
+  fill: transparent;
+  transition: fill 0.03s ease-in-out;
+}
+
+.sparks {
+  fill: var(--heart-sparks);
+  opacity: 0;
+}
+
+.like-icon.is-liked .core {
+    fill: var(--heart-sparks);
+    transition: fill 0.3s ease-in-out;
+}
+
+.like-icon.is-liked .main-body {
+    fill: var(--heart-sparks);
+    transition: fill 0.3s ease-in-out;
+    transition-delay: 0.05s;
+}
+
+.like-icon.is-liked .contour {
+    fill: var(--heart-sparks);
+    transition: fill 0.3s ease-in-out;
+    transition-delay: 0.06s;
+}
+
+.like-icon.is-liked .heart {
+  transform-origin: 50%;
+  animation: heart-click 0.3s ease-in 1;
+  /* animation: sparks 0.3s ease-in; */
+  /* animation-delay: 0s 0.3s; */
+}
+
+.like-icon.is-liked .sparks {
+  transform-origin: 50%;
+  animation: sparks 0.3s ease-in; 
+  animation-delay: 0.3s;
+}
+
+.card__icon-button:active .heart {
+  transform-origin: 50%;
+  transform: scale(0.75);
+  animation: transform 0.3s ease-in;
+}
+
+@keyframes heart-click {
+  0% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 1.5;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes heart-active {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 0.75;
+  }
+}
+
+@keyframes sparks {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

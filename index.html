@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./styles/buttons.css" />
     <link rel="stylesheet" href="./styles/main-section.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/heart.css" />
+
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
   </head>
   <body class="page">
@@ -60,34 +62,40 @@
         </p>
         <p>Место для ваших воспоминаний о начале обучения.</p>
         <div class="card__buttons">
-          <button class="card__icon-button like-icon-container">
-            <svg
-              class="like-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              width="27"
-              height="24"
-              viewBox="0 0 27 24"
-            >
-              <path d="M6 0H3V3H6V0Z" />
-              <path d="M9 0H6V3H9V0Z" />
-              <path d="M3 3H0V6H3V3Z" />
-              <path d="M3 6H0V9H3V6Z" />
-              <path d="M3 9H0V12H3V9Z" />
-              <path d="M12 0H9V3H12V0Z" />
-              <path d="M6 12H3V15H6V12Z" />
-              <path d="M9 15H6V18H9V15Z" />
-              <path d="M12 18H9V21H12V18Z" />
-              <path d="M21 0H24V3H21V0Z" />
-              <path d="M18 0H21V3H18V0Z" />
-              <path d="M24 3H27V6H24V3Z" />
-              <path d="M24 6H27V9H24V6Z" />
-              <path d="M24 9H27V12H24V9Z" />
-              <path d="M15 0H18V3H15V0Z" />
-              <path d="M21 12H24V15H21V12Z" />
-              <path d="M18 15H21V18H18V15Z" />
-              <path d="M15 18H18V21H15V18Z" />
-              <path d="M15 3H12V6H15V3Z" />
-              <path d="M15 21H12V24H15V21Z" />
+          <button class="card__icon-button">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              width="39" 
+              height="36" 
+              viewBox="0 0 39 36" 
+              fill="none"
+              class="like-icon">
+              
+              <g clip-path="url(#clip0_2054_1309)">
+                <g class="heart">
+                  <path 
+                    class="contour" 
+                    d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" 
+                    />
+                  <path 
+                    class="main-body" 
+                    d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z" 
+                    />
+                  <path 
+                    class="core" 
+                    d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z" 
+                    />
+                </g>
+                <path 
+                  class="sparks" 
+                  d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" 
+                  />
+              </g>
+              <defs>
+                <clipPath id="clip0_2054_1309">
+                  <rect width="39" height="36" fill="white"/>
+                </clipPath>
+              </defs>
             </svg>
         </button>
           <button class="card__like-button flat-button">
@@ -99,488 +107,15 @@
 
     <footer>
       <button class="footer__save-button flat-button">
-      <svg
+      <svg 
         class="footer__floppy-disc-icon"
-        xmlns="http://www.w3.org/2000/svg"
         width="29"
         height="28"
         viewBox="0 0 29 28"
-        fill="none"
-      >
-        <rect x="0.5" width="2.15385" height="2.15385" />
-        <rect x="0.5" y="2.15405" width="2.15385" height="2.15385" />
-        <rect x="0.5" y="4.30762" width="2.15385" height="2.15385" />
-        <rect x="0.5" y="6.46167" width="2.15385" height="2.15385" />
-        <rect x="0.5" y="8.61523" width="2.15385" height="2.15385" />
-        <rect x="0.5" y="10.7693" width="2.15385" height="2.15385" />
-        <rect x="0.5" y="12.9231" width="2.15385" height="2.15385" />
-        <rect x="0.5" y="15.0769" width="2.15385" height="2.15385" />
-        <rect x="0.5" y="17.2307" width="2.15385" height="2.15385" />
-        <rect x="0.5" y="19.3848" width="2.15385" height="2.15385" />
-        <rect x="0.5" y="21.5383" width="2.15385" height="2.15385" />
-        <rect x="0.5" y="23.6924" width="2.15385" height="2.15385" />
-        <rect x="0.5" y="25.8459" width="2.15385" height="2.15385" />
-        <rect
-          x="24.1929"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 24.1929 0)"
-        />
-        <rect
-          x="22.0391"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 22.0391 0)"
-        />
-        <rect
-          x="19.8843"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 19.8843 0)"
-        />
-        <rect
-          x="17.7305"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 17.7305 0)"
-        />
-        <rect
-          x="15.5767"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 15.5767 0)"
-        />
-        <rect
-          x="13.4233"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 13.4233 0)"
-        />
-        <rect
-          x="11.2695"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 11.2695 0)"
-        />
-        <rect
-          x="9.11572"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 9.11572 0)"
-        />
-        <rect
-          x="6.96094"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 6.96094 0)"
-        />
-        <rect
-          x="4.80713"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 4.80713 0)"
-        />
-        <rect
-          x="26.3462"
-          y="2.15405"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 26.3462 2.15405)"
-        />
-        <rect
-          x="6.96094"
-          y="4.30762"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 6.96094 4.30762)"
-        />
-        <rect
-          x="6.96094"
-          y="2.15405"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 6.96094 2.15405)"
-        />
-        <rect
-          x="6.96094"
-          y="6.46167"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 6.96094 6.46167)"
-        />
-        <rect
-          x="22.0391"
-          y="4.30762"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 22.0391 4.30762)"
-        />
-        <rect
-          x="22.0391"
-          y="2.15405"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 22.0391 2.15405)"
-        />
-        <rect
-          x="22.0391"
-          y="6.46167"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 22.0391 6.46167)"
-        />
-        <rect
-          x="17.7305"
-          y="4.30762"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 17.7305 4.30762)"
-        />
-        <rect
-          x="17.7305"
-          y="2.15405"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 17.7305 2.15405)"
-        />
-        <rect
-          x="17.7305"
-          y="6.46167"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 17.7305 6.46167)"
-        />
-        <rect
-          x="22.0391"
-          y="8.61523"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 22.0391 8.61523)"
-        />
-        <rect
-          x="19.8843"
-          y="8.61523"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 19.8843 8.61523)"
-        />
-        <rect
-          x="17.7305"
-          y="8.61523"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 17.7305 8.61523)"
-        />
-        <rect
-          x="15.5767"
-          y="8.61523"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 15.5767 8.61523)"
-        />
-        <rect
-          x="13.4233"
-          y="8.61523"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 13.4233 8.61523)"
-        />
-        <rect
-          x="11.2695"
-          y="8.61523"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 11.2695 8.61523)"
-        />
-        <rect
-          x="9.11572"
-          y="8.61523"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 9.11572 8.61523)"
-        />
-        <rect
-          x="6.96094"
-          y="8.61523"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 6.96094 8.61523)"
-        />
-        <rect
-          x="24.1929"
-          y="15.0769"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 24.1929 15.0769)"
-        />
-        <rect
-          x="22.0391"
-          y="15.0769"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 22.0391 15.0769)"
-        />
-        <rect
-          x="19.8843"
-          y="15.0769"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 19.8843 15.0769)"
-        />
-        <rect
-          x="17.7305"
-          y="15.0769"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 17.7305 15.0769)"
-        />
-        <rect
-          x="15.5767"
-          y="15.0769"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 15.5767 15.0769)"
-        />
-        <rect
-          x="13.4233"
-          y="15.0769"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 13.4233 15.0769)"
-        />
-        <rect
-          x="11.2695"
-          y="15.0769"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 11.2695 15.0769)"
-        />
-        <rect
-          x="9.11572"
-          y="15.0769"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 9.11572 15.0769)"
-        />
-        <rect
-          x="6.96094"
-          y="15.0769"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 6.96094 15.0769)"
-        />
-        <rect
-          x="24.1929"
-          y="17.2307"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 24.1929 17.2307)"
-        />
-        <rect
-          x="6.96094"
-          y="17.2307"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 6.96094 17.2307)"
-        />
-        <rect
-          x="24.1929"
-          y="19.3848"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 24.1929 19.3848)"
-        />
-        <rect
-          x="6.96094"
-          y="19.3848"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 6.96094 19.3848)"
-        />
-        <rect
-          x="24.1929"
-          y="21.5383"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 24.1929 21.5383)"
-        />
-        <rect
-          x="6.96094"
-          y="21.5383"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 6.96094 21.5383)"
-        />
-        <rect
-          x="6.96094"
-          y="23.6924"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 6.96094 23.6924)"
-        />
-        <rect
-          x="24.1929"
-          y="23.6924"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 24.1929 23.6924)"
-        />
-        <rect
-          x="26.3462"
-          y="25.8459"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 26.3462 25.8459)"
-        />
-        <rect
-          x="24.1929"
-          y="25.8459"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 24.1929 25.8459)"
-        />
-        <rect
-          x="22.0391"
-          y="25.8459"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 22.0391 25.8459)"
-        />
-        <rect
-          x="19.8843"
-          y="25.8459"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 19.8843 25.8459)"
-        />
-        <rect
-          x="17.7305"
-          y="25.8459"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 17.7305 25.8459)"
-        />
-        <rect
-          x="15.5767"
-          y="25.8459"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 15.5767 25.8459)"
-        />
-        <rect
-          x="13.4233"
-          y="25.8459"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 13.4233 25.8459)"
-        />
-        <rect
-          x="11.2695"
-          y="25.8459"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 11.2695 25.8459)"
-        />
-        <rect
-          x="9.11572"
-          y="25.8459"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 9.11572 25.8459)"
-        />
-        <rect
-          x="6.96094"
-          y="25.8459"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 6.96094 25.8459)"
-        />
-        <rect
-          x="4.80713"
-          y="25.8459"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(90 4.80713 25.8459)"
-        />
-        <rect
-          x="28.5"
-          y="28"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(-180 28.5 28)"
-        />
-        <rect
-          x="28.5"
-          y="25.8459"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(-180 28.5 25.8459)"
-        />
-        <rect
-          x="28.5"
-          y="23.6924"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(-180 28.5 23.6924)"
-        />
-        <rect
-          x="28.5"
-          y="21.5383"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(-180 28.5 21.5383)"
-        />
-        <rect
-          x="28.5"
-          y="19.3848"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(-180 28.5 19.3848)"
-        />
-        <rect
-          x="28.5"
-          y="17.2307"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(-180 28.5 17.2307)"
-        />
-        <rect
-          x="28.5"
-          y="15.0769"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(-180 28.5 15.0769)"
-        />
-        <rect
-          x="28.5"
-          y="12.9231"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(-180 28.5 12.9231)"
-        />
-        <rect
-          x="28.5"
-          y="10.7693"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(-180 28.5 10.7693)"
-        />
-        <rect
-          x="28.5"
-          y="8.61523"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(-180 28.5 8.61523)"
-        />
-        <rect
-          x="28.5"
-          y="6.46167"
-          width="2.15385"
-          height="2.15385"
-          transform="rotate(-180 28.5 6.46167)"
-        />
+        >
+        <use href="./svg/floppy-disc.svg#floppy-disc">
       </svg>
-      Сохранить на память
+      <span class="button__text">Сохранить на память</span>
     </button>
     </footer>
     <script src="./scripts/set-theme.js"></script>

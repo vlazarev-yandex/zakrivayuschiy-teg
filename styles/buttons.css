@@ -5,60 +5,77 @@
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки + */
 
-.card__icon-button {
-    background: none;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    line-height: 0;
+.flat-button {
+  border: 2px solid var(--Themes__mainColor, #000);
+  background: transparent;
+  color: var(--Themes__mainColor);
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+
+  transition: box-shadow 0.5s;
+
+  position: relative;
+
+  overflow: hidden;
+
+  transition: color 1s ease;
 }
 
-.flat-button {
-    border: 2px solid var(--Themes__mainColor, #000);
-    background: var(--Themes__background-color, #FFF);
-    color: var(--Themes__mainColor);
+.flat-button::before {
+  content: "";
+  width: 100%;
+  height: 100%;
 
-    display: flex;
-    flex-direction: row;
+  background-color: var(--Themes__mainColor);
+  position: absolute;
+  left: 0;
+  top: 0;
 
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
 
-    cursor: pointer;
+.flat-button:hover {
+  color: var(--Themes__background-color);
+}
 
-    transition: box-shadow 0.5s; 
+.flat-button:hover::before {
+  transform: translateX(0%);
+  transition: transform 0.5s ease-in-out;
 }
 
 .flat-button:focus-visible {
-    box-shadow: 2px 2px 0px 0px var(--Themes__mainColor);
-    outline: none;
+  box-shadow: 2px 2px 0px 0px var(--Themes__mainColor);
+  outline: none;
 }
 
-
-.card__like-button {    
-    width: 134px; /* 130 + 2*2 — ширина с учётом толщины грониц */
-    height: 42px; /* 38 + 2*2 — высота с учётом толщины грониц */
+.card__like-button {
+  width: 134px; /* 130 + 2*2 — ширина с учётом толщины грониц */
+  background-color: transparent;
 }
-
-.like-icon {
-    fill: var(--Themes__mainColor);
-}
-
 
 .button__text {
-    color: var(--Themes__mainColor);
-    font: var(--header__font);
-    line-height: 90%;
+  background-color: transparent;
+  font: var(--header__font);
+  line-height: 90%;
+
+  z-index: 2;
 }
 
 .card__buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: stretch;
 
-    width: fit-content;
-    margin-inline-start: auto;
+  width: fit-content;
+  height: 42px; /* 38 + 2*2 — высота с учётом толщины грониц */
+  margin-inline-start: auto;
 }
