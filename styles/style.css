@@ -112,7 +112,7 @@
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
-  left: -19px;
+  left: -15px;
   animation: theme-menu__animation 1s ease-in-out infinite;
   animation-fill-mode: both;
 }
@@ -164,7 +164,7 @@
   border: 2px solid var(--Themes__mainColor, #000);
   background: var(--Themes__background-color, #fff);
 
-  margin-block-end: 108px;
+  margin-block-end: 50px;
   text-align: start;
 }
 
