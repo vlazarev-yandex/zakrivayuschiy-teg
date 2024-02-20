@@ -174,11 +174,18 @@
 
 .mainSection__title {
   font-size: 18px;
-  padding: 0 10px;
+  padding-inline: 10px;
+  padding-block: 3px; /* desktop */
   text-align: start;
   
   display: flex;
   align-items: center;
+}
+
+@media (width <= 500px) {
+  .mainSection__title {
+    padding-block: 4px 6px; /* mobile */
+  }
 }
 
 .mainSection__image {
@@ -270,7 +277,7 @@
 .card__buttons {
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  gap: 8px; /* подобрано вручную */
   align-items: stretch;
 
   width: fit-content;
@@ -286,6 +293,8 @@
   cursor: pointer;
   padding: 0;
   line-height: 0;
+
+  width: fit-content;
 
   border: 2px transparent solid;
 }
@@ -319,6 +328,8 @@
 
 .like-icon {
   fill: var(--Themes__mainColor);
+  width: fit-content;
+  padding: 0;
 }
 
 .core {
