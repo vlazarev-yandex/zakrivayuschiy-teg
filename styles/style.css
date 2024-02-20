@@ -53,7 +53,7 @@
   padding-block-end: 25px;
   padding-inline: 120.5px; /* desktop */
 
-  margin-block-end: 108px;
+  margin-block-end: 100px;
 }
 
 @media (width <= 500px) {
