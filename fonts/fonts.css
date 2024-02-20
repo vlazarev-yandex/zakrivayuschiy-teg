@@ -1,5 +1,5 @@
 :root {
-  --Inter-variable-wght: 785;
+  --Inter-variable-wght: 700;
   --Inter-variable-slnt: normal;
   --Press-Start-2P-wght: 400;
   --Press-Start-2P-slnt: normal;
@@ -8,7 +8,7 @@
 /* В этом файле вы импортируете все шрифты для сайта. Один из них вариативный и требует особенной настройки */
 @font-face {
     font-display: swap;
-    font-family: 'Inter-Variable';
+    font-family: 'Inter';
     font-variation-settings: 'wght' var(--Inter-variable-wght), 'slnt' var(--Inter-variable-slnt);
     src:
       local('Inter-Variable'),
