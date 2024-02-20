@@ -19,7 +19,7 @@
   min-block-size: 100dvb;
   position: relative;
 
-  padding: 102px 0;
+  padding: 100px 0;
   background-color: var(--Themes__background-color);
 
   display: flex;
@@ -87,6 +87,7 @@
   width: fit-content;
 
   position: relative;
+  padding-inline-start: 20px;
 }
 
 .theme-menu__button {
@@ -199,8 +200,8 @@
   display: flex;
   flex-direction: column;
   gap: 27px;
-
-  padding: 27px; /* надо сделать по макету */
+  
+  padding: 27px 25px 25px 25px;
   line-height: 21px;
   font-weight: 465;
 }
@@ -262,7 +263,7 @@
 }
 
 .card__like-button {
-  width: 134px; /* 130 + 2*2 — ширина с учётом толщины грониц */
+  width: 130px;
   background-color: transparent;
 }
 
@@ -277,12 +278,13 @@
 .card__buttons {
   display: flex;
   flex-direction: row;
-  gap: 8px; /* подобрано вручную */
+  gap: 4px; /* подобрано вручную */
   align-items: stretch;
 
   width: fit-content;
-  height: 42px; /* 38 + 2*2 — высота с учётом толщины грониц */
+  height: 39px;
   margin-inline-start: auto;
+  margin-block-start: -2px; /* для ручной сверки с макетом */
 }
 
 /* ------------------------------------------------------------------------------------------------------------ */
