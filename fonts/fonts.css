@@ -10,7 +10,7 @@
     font-display: swap;
     font-family: 'Inter';
     font-variation-settings: 'wght' var(--Inter-variable-wght), 'slnt' var(--Inter-variable-slnt);
-    font-weight: 400 785;
+    font-weight: 400 785; /* эта строчка не имеет смысла, да и просто некорректна, но без неё падают тесты */
     src:
       local('Inter-Variable'),
       url('./Inter-Variable.woff2') format('woff2 supports variations'),
@@ -21,7 +21,7 @@
     font-display: swap;
     font-family: 'Press Start 2P';
     font-variation-settings: 'wght' var(--Press-Start-2P-wght), 'slnt' var(--Press-Start-2P-slnt);
-    font-weight: 400 785;
+    font-weight: 400 785; /* эта строчка не имеет смысла, да и просто некорректна, но без неё падают тесты */
     src:
       local('Inter-Variable'),
       url('./PressStart2P-Regular.woff') format('woff supports variations'),
