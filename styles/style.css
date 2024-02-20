@@ -200,6 +200,13 @@
   background-size: contain;
 }
 
+@media (width <= 500px) {
+  .mainSection__image {
+    width: 371px;
+    aspect-ratio: 1/1;
+  }
+}
+
 .mainSection__text-section {
   display: flex;
   flex-direction: column;
