@@ -37,3 +37,357 @@
   background-size: 4px;
   z-index: -1;
 }
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* header */
+.header {
+  color: var(--Themes__mainColor);
+  font: var(--header__font);
+  text-transform: uppercase;
+  text-align: center;
+
+  width: min(100%, 696px); /* надо сделать через clamp */
+  border: 2px solid var(--Themes__mainColor, #000);
+  background: var(--Themes__background-color, #fff);
+  padding: 25px; /* надо посчитать через clamp */
+
+  margin-block-end: 108px;
+}
+
+.header__title {
+  font-size: var(--header__font-size-title);
+  margin-block-end: 20px;
+}
+
+.header__subtitle {
+  font-size: var(--header__font-size-subtitle);
+  margin-block-end: 25px;
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  text-align: start;
+  width: fit-content;
+  margin: auto;
+
+  position: relative;
+}
+
+.theme-menu__button {
+  text-transform: uppercase;
+  width: fit-content;
+
+  background: none;
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+
+  position: relative;
+  padding: 0;
+}
+
+.theme-menu__button:hover,
+.theme-menu__button:disabled {
+  opacity: 0.6;
+}
+
+.theme-menu__button:disabled {
+  pointer-events: none;
+  position: relative;
+}
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+  position: absolute;
+  left: -19px;
+  animation: theme-menu__animation 1s ease-in-out infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes theme-menu__animation {
+  from {
+    transform: translateX(-4px);
+  }
+
+  50% {
+    transform: none;
+  }
+
+  to {
+    transform: translateX(-4px);
+  }
+}
+
+.theme-menu__button:focus-visible {
+  outline: none;
+  border: none;
+}
+
+.theme-menu__button::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0;
+  transition: transform 0.1s;
+}
+
+.theme-menu__button:focus-visible::after {
+  transform: scaleX(1);
+  transition: transform 0.5s;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* main-section */
+.mainSection {
+  color: var(--Themes__mainColor);
+  font: var(--mainSection__font);
+  text-align: center;
+
+  width: min(100%, 696px); /* надо сделать через clamp */
+  border: 2px solid var(--Themes__mainColor, #000);
+  background: var(--Themes__background-color, #fff);
+
+  margin-block-end: 108px;
+  text-align: start;
+}
+
+.mainSection__title {
+  font-size: 18px;
+  padding: 10px 4px 10px 8px;
+  text-align: start;
+}
+
+.mainSection__image {
+  background-image: url(../images/image.png);
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-size: contain;
+}
+
+.mainSection__text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+
+  padding: 27px; /* надо сделать по макету */
+  line-height: 21px;
+  font-weight: 465;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* buttons */
+
+/* 
+✦ like-icon — для svg-иконки анимированного сердца +
+✦ card__like-button — для кнопки Like рядом с иконкой
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
+✦ button__text — для обозначения текстового элемента внутри кнопки + */
+
+.flat-button {
+  border: 2px solid var(--Themes__mainColor, #000);
+  background: transparent;
+  color: var(--Themes__mainColor);
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+
+  transition: box-shadow 0.5s;
+
+  position: relative;
+
+  overflow: hidden;
+
+  transition: color 1s ease;
+}
+
+.flat-button::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--Themes__mainColor);
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.flat-button:hover {
+  color: var(--Themes__background-color);
+}
+
+.flat-button:hover::before {
+  transform: translateX(0%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.flat-button:focus-visible {
+  box-shadow: 2px 2px 0px 0px var(--Themes__mainColor);
+  outline: none;
+}
+
+.card__like-button {
+  width: 134px; /* 130 + 2*2 — ширина с учётом толщины грониц */
+  background-color: transparent;
+}
+
+.button__text {
+  background-color: transparent;
+  font: var(--header__font);
+  line-height: 90%;
+
+  z-index: 2;
+}
+
+.card__buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: stretch;
+
+  width: fit-content;
+  height: 42px; /* 38 + 2*2 — высота с учётом толщины грониц */
+  margin-inline-start: auto;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* heart */
+.card__icon-button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  line-height: 0;
+
+  border: 2px transparent solid;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px var(--Themes__mainColor) solid;
+  transition: border-color 1s ease;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--Themes__mainColor);
+  transition: fill 0.3s ease-in-out;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--Themes__mainColor);
+  transition: fill 0.3s ease-in-out;
+  transition-delay: 0.05s;
+}
+
+.card__icon-button:active .core {
+  fill: var(--heart-sparks);
+  transition: fill 0.3s ease-in-out;
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--heart-sparks);
+  transition: fill 0.3s ease-in-out;
+  transition-delay: 0.05s;
+}
+
+.like-icon {
+  fill: var(--Themes__mainColor);
+}
+
+.core {
+  fill: transparent;
+  transition: fill 0.3s ease-in-out;
+  transition-delay: 0.03s;
+}
+
+.contour {
+  fill: var(--Themes__mainColor);
+  transition: fill 0.1s linear;
+}
+
+.main-body {
+  fill: transparent;
+  transition: fill 0.03s ease-in-out;
+}
+
+.sparks {
+  fill: var(--heart-sparks);
+  opacity: 0;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--heart-sparks);
+  transition: fill 0.3s ease-in-out;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--heart-sparks);
+  transition: fill 0.3s ease-in-out;
+  transition-delay: 0.05s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--heart-sparks);
+  transition: fill 0.3s ease-in-out;
+  transition-delay: 0.06s;
+}
+
+.like-icon.is-liked .heart {
+  transform-origin: 50%;
+  animation: heart-click 0.3s ease-in 1;
+}
+
+.like-icon.is-liked .sparks {
+  transform-origin: 50%;
+  animation: sparks 0.3s ease-in;
+  animation-delay: 0.3s;
+}
+
+.card__icon-button:active .heart {
+  transform-origin: 50%;
+  transform: scale(0.75);
+  animation: transform 0.3s ease-in;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* footer */
+.footer__save-button {
+  padding: 15px 20px;
+
+  height: fit-content;
+  width: fit-content;
+
+  font: var(--header__font);
+  line-height: 90%;
+}
+
+@media (width <= 375px) {
+  .footer__save-button {
+    flex-direction: column;
+  }
+}
+
+.footer__floppy-disc-icon {
+  fill: currentColor;
+  transition: fill 1s ease;
+
+  z-index: 1;
+}

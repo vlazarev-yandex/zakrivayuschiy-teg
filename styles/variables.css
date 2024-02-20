@@ -1,20 +1,30 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-    --Themes__mainColor-light: #000; 
-    --Themes__background-color-light: #FFF; 
+  --Themes__mainColor-light: #000;
+  --Themes__background-color-light: #fff;
 
-    --Themes__mainColor-dark: #00CC14; 
-    --Themes__background-color-dark: #000; 
+  --Themes__mainColor-dark: #00cc14;
+  --Themes__background-color-dark: #000;
 
-    --Themes__background-dark: url(../svg/pattern-dark.svg) var(--Themes__background-color-dark);
-    --Themes__background-light: url(../svg/pattern-light.svg) var(--Themes__background-color-light);
+  --Themes__background-dark: url(../svg/pattern-dark.svg)
+    var(--Themes__background-color-dark);
+  --Themes__background-light: url(../svg/pattern-light.svg)
+    var(--Themes__background-color-light);
 
-    --header__font: normal 400 normal 14px "Press Start 2P";
-    --header__font-size-title: clamp(3.0625rem, calc(2.7104rem + 1.5023vw), 4.0625rem); /* поправить для маленьких экранов */
-    --header__font-size-subtitle: clamp(0.875rem, calc(0.6769rem + 0.8451vw), 1.4375rem);
+  --header__font: normal 400 normal 14px "Press Start 2P";
+  --header__font-size-title: clamp(
+    3.0625rem,
+    calc(2.7104rem + 1.5023vw),
+    4.0625rem
+  ); /* поправить для маленьких экранов */
+  --header__font-size-subtitle: clamp(
+    0.875rem,
+    calc(0.6769rem + 0.8451vw),
+    1.4375rem
+  );
 
-    --mainSection__font: normal 700 normal 18px "Inter-Variable";
+  --mainSection__font: normal 700 normal 18px "Inter-Variable";
 
-    --heart-sparks: #FF0000;
+  --heart-sparks: #ff0000;
 }
