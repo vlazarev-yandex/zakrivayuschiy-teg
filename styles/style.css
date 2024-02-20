@@ -150,7 +150,6 @@
 .mainSection {
   color: var(--Themes__mainColor);
   font: var(--mainSection__font);
-  text-align: center;
 
   width: min(100%, 696px); /* надо сделать через clamp */
   border: 2px solid var(--Themes__mainColor, #000);
@@ -206,14 +205,9 @@
   gap: 8px;
 
   cursor: pointer;
-
-  transition: box-shadow 0.5s;
-
   position: relative;
-
   overflow: hidden;
-
-  transition: color 1s ease;
+  transition: color 1s ease, box-shadow 0.5s;
 }
 
 .flat-button::before {
@@ -273,7 +267,6 @@
 .card__icon-button {
   background: none;
   outline: none;
-  border: none;
   cursor: pointer;
   padding: 0;
   line-height: 0;

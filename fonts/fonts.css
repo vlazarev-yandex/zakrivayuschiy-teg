@@ -2,6 +2,7 @@
 @font-face {
     font-display: swap;
     font-family: 'Inter-Variable';
+    font-weight: 400, 465, 700, 785;
     src:
       local('Inter-Variable'),
       url('./Inter-Variable.woff2') format('woff2 supports variations'),
@@ -11,6 +12,7 @@
   @font-face {
     font-display: swap;
     font-family: 'Press Start 2P';
+    font-weight: 400, 700;
     src:
       local('Inter-Variable'),
       url('./PressStart2P-Regular.woff') format('woff supports variations'),
