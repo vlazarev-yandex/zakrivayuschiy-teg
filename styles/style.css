@@ -73,6 +73,11 @@
   margin-block-end: 25px;
 }
 
+.theme-menu {
+  display: flex;
+  justify-content: space-around;
+}
+
 .theme-menu__list {
   display: flex;
   flex-direction: column;
@@ -80,7 +85,6 @@
 
   text-align: start;
   width: fit-content;
-  margin: auto;
 
   position: relative;
 }
@@ -170,8 +174,11 @@
 
 .mainSection__title {
   font-size: 18px;
-  padding: 10px 4px 10px 8px;
+  padding: 0 10px;
   text-align: start;
+  
+  display: flex;
+  align-items: center;
 }
 
 .mainSection__image {
