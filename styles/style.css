@@ -42,7 +42,8 @@
 /* header */
 .header {
   color: var(--Themes__mainColor);
-  font: var(--header__font);
+  font-family: var(--header__font-family);
+  font-size: var(--header__font-size);
   text-transform: uppercase;
   text-align: center;
 
@@ -163,7 +164,8 @@
 /* main-section */
 .mainSection {
   color: var(--Themes__mainColor);
-  font: var(--mainSection__font);
+  font-family: var(--mainSection__font-family);
+  font-size: var(--mainSection__font-size);
 
   width: min(100%, 696px);
   border: 2px solid var(--Themes__mainColor, #000);
@@ -171,10 +173,12 @@
 
   margin-block-end: 50px;
   text-align: start;
+  
+  overflow: hidden;
 }
 
 .mainSection__title {
-  font-size: 18px;
+  font-size: var(--mainSection__font-size);
   padding-inline: 10px;
   padding-block: 3px; /* desktop */
   text-align: start;
@@ -191,7 +195,7 @@
 
 .mainSection__image {
   background-image: url(../images/image.png);
-  width: 100%;
+  width: 696px;
   aspect-ratio: 1/1;
   background-size: contain;
 }
@@ -203,7 +207,7 @@
   
   padding: 27px 25px 25px 25px;
   line-height: 21px;
-  font-weight: 465;
+  --Inter-variable-wght: 465; 
 }
 
 /* ------------------------------------------------------------------------------------------------------------ */
@@ -269,7 +273,8 @@
 
 .button__text {
   background-color: transparent;
-  font: var(--header__font);
+  font-family: var(--header__font-family);
+  font-size: var(--header__font-size);
   line-height: 90%;
 
   z-index: 2;
@@ -397,7 +402,8 @@
   height: fit-content;
   width: fit-content;
 
-  font: var(--header__font);
+  font-family: var(--header__font-family);
+  font-size: var(--header__font-size);
   line-height: 90%;
 }
 
