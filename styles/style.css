@@ -46,12 +46,21 @@
   text-transform: uppercase;
   text-align: center;
 
-  width: min(100%, 696px); /* надо сделать через clamp */
+  width: min(100%, 696px);
   border: 2px solid var(--Themes__mainColor, #000);
   background: var(--Themes__background-color, #fff);
-  padding: 25px; /* надо посчитать через clamp */
+  padding-block-start: 136px; /* desktop */
+  padding-block-end: 25px;
+  padding-inline: 120.5px; /* desktop */
 
   margin-block-end: 108px;
+}
+
+@media (width <= 500px) {
+  .header {
+    padding-block-start: 120px; /* mobile */
+    padding-inline: 14px; /* mobile */
+  }
 }
 
 .header__title {
@@ -151,7 +160,7 @@
   color: var(--Themes__mainColor);
   font: var(--mainSection__font);
 
-  width: min(100%, 696px); /* надо сделать через clamp */
+  width: min(100%, 696px);
   border: 2px solid var(--Themes__mainColor, #000);
   background: var(--Themes__background-color, #fff);
 
