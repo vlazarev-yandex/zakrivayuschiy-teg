@@ -48,7 +48,8 @@
 /* ------------------------------------------------------------------------------------------------------------ */
 /* header */
 .header {
-  color: var(--Themes__mainColor);
+  color: (--Themes__mainColor);
+  font-weight: 400;
   font-family: var(--header__font-family), sans-serif;
   font-size: var(--header__font-size);
   text-transform: uppercase;
