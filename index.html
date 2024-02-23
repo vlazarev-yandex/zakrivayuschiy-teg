@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="dark light">
+    <meta name="color-scheme" content="dark light" />
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -18,14 +18,15 @@
     <link rel="stylesheet" href="./styles/heart.css" />
 
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./svg/favicon.svg"> 
   </head>
   <body class="page">
-    <div class="page-background"></div>
+    <!-- <div class="page-background"></div> -->
     <header class="header">
-      <h1 class="header__title">&#x3C;/HtMl&#x3E;</h1>
-      <h2 class="header__subtitle">закрывающий тег</h2>
+      <a href="#" class="header__logo">&#x3C;/HtMl&#x3E;</a>
+      <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
-        <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
+        <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->    
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
             <button type="button" data-theme="dark" class="theme-menu__button">
@@ -50,11 +51,16 @@
         </ul>
       </nav>
     </header>
-    <main class="mainSection">
+    <main class="main">
+      <section class="mainSection">
       <h2 class="mainSection__title">
         Фритрек и нулевой спринт: Подготовка к работе
       </h2>
-      <div class="mainSection__image"></div>
+      <img
+        class="mainSection__image"
+        src="../images/image.png"
+        alt="Картинка с минивеном на фиолетовом фоне. Минивен похож на дом на колёсах. На переднем плане справа стоит высокое дерево без веток."
+      />
       <section class="mainSection__text-section">
         <p>
           Это было самое начало пути. На этом этапе важно было проникнуться
@@ -63,8 +69,9 @@
         </p>
         <p>Место для ваших воспоминаний о начале обучения.</p>
         <div class="card__buttons">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="39"
               height="36"
@@ -94,20 +101,18 @@
               </g>
               <defs>
                 <clipPath id="clip0_2054_1309">
-                  <rect width="39" height="36" fill="white" />
+                  <rect width="39" height="36" fill="green" />
                 </clipPath>
               </defs>
             </svg>
           </button>
-          <button class="card__like-button flat-button">
+          <button type="button" class="card__like-button flat-button">
             <span class="button__text">Like</span>
           </button>
         </div>
       </section>
-    </main>
-
-    <footer>
-      <button class="footer__save-button flat-button">
+    </section>
+      <button type="button" class="footer__save-button flat-button">
         <svg
           class="footer__floppy-disc-icon"
           width="29"
@@ -118,7 +123,7 @@
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
-    </footer>
+    </main>
     <script src="./scripts/set-theme.js"></script>
     <script src="./scripts/like.js"></script>
   </body>
